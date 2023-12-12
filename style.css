@@ -49,6 +49,7 @@ li {
   justify-content: center;
   height: 100%;
   width: 100%;
+  
 }
 .primeiraC{
   width: 60%; 
@@ -74,8 +75,9 @@ li {
   background-color: white;
   border-radius: 40px;
   width: 40%;
-  height: 60%;
+  height: 50%;
   justify-content: center;
+  align-items: center;
 }
 .icone1{
   display: flex;
@@ -190,7 +192,7 @@ li {
   width: 40%;
   height: 70vh;
   
-  margin-top: 30px;
+  margin-top: 5%;
   border-radius: 20px;
   margin-left: 20vh;
 }
@@ -208,8 +210,8 @@ li {
   max-width: 75%;
   
   height: 50%;
-  margin-left: 5%;
-  margin-top: 10%;
+  margin-left: 6%;
+  margin-top: 13%;
 }
 img{
   width: 100%;
@@ -329,8 +331,8 @@ font-size: 50px;
 }
 .sextaColunaDois {
   margin-left: auto; 
-  
-  margin-right: 10%;
+  margin-top: 5%;
+  margin-right: 30%;
 }
 .sextaColunaDois h1, p {
   text-align: right;
