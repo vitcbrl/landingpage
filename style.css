@@ -31,9 +31,11 @@ li {
 .botaoInscricao {
   border-radius: 16px;
   background-color: red;
+  color: white;
   margin-left: 35%;
   margin-top: 5%;
   width: 30vh;
+  height: 8vh;
 }
 .primeira{
   display: flex;
@@ -70,7 +72,7 @@ li {
   background-color: white;
   border-radius: 40px;
   width: 40%;
-  height: 70%;
+  height: 60%;
   justify-content: center;
 }
 .icone1{
@@ -89,6 +91,12 @@ li {
   position: relative;
   background-color: #001F3F;
   overflow: hidden;
+  display: block;
+  max-width: 100%;
+}
+.terceira h1{
+  color: white;
+  text-align: center;
 }
 
 .terceira::before {
@@ -112,6 +120,7 @@ li {
   height: auto; /* Ajusta a altura automaticamente mantendo a proporção */
   margin: 0 auto; /* Centraliza horizontalmente */
   display: block; /* Para centralizar corretamente, define como bloco */
+  height: 80vh;
 }
 
 
@@ -161,35 +170,43 @@ li {
 .texto{
   background-color: red;
   color: white;
+  text-align: center;
+  border-radius: 16px;
 }
 .quarta{
-  display: flex;
-  background-image: url('Background\ Cinza\ atualizado.png');
-    background-size: cover; /* Para cobrir todo o elemento */
+    display: flex;
+    background-image: url('Linhas\ de\ detalhes.png');
+    background-size: contain; 
     background-repeat: no-repeat;
+    background-color:black;
     height: 100vh;
-    margin-top: 33vh;
+    margin-top: 10vh;
   }
 .quartaUm {
   border: solid;
   background-color: white;
   width: 40%;
   height: 70vh;
-  margin-right: -20px;
+  
   margin-top: 30px;
   border-radius: 20px;
   margin-left: 20vh;
 }
-
+.quartaUm h1{
+  text-align: left;
+  margin-left: 2vh;
+}
 .quartaUm p {
   margin-top: 8%;
+  margin-left: 2vh;
   font-size:35px;
+  text-align: left;
 }
 .quartaDois img {
-  max-width: 70%;
-  margin-left: 100px;
-  height: 70%;
-  margin-top: 2%;
+  max-width: 100%;
+  
+  height: 60%;
+  margin-top: 10%;
 }
 img{
   width: 100%;
@@ -201,27 +218,35 @@ img{
 }
 .quintaDois{
   margin-left: auto;
+  
 }
 .quintaDois h1 span.etapa {
   color: red;
   font-size: 80px;
   display: block;
-  text-align: left;
+  text-align: right;
+  margin-right: 20%;
    
 }
 .quintaDois h1 span.planejar{
   font-size: 80px;
   display: block;
-  text-align: left;
+  text-align: right;
+  margin-right: 20%;
 }
 .quintaDois p span.pt {
   display: block;
   font-size: 20px;
-  text-align: left;
+  text-align: right;
+  margin-right: 20%;
 }
 .quintaDois img {
   max-width: fit-content;
   justify-content: center;
+}
+.pila{
+  background-color:rgb(240, 240, 240);
+  border-radius: 16px;
 }
 .planos{
   display: flex;
@@ -231,6 +256,7 @@ img{
   align-items: stretch;
   height: 100%;
   width: 100%;
+  margin-top: 10vh;
 }
 .planos img {
   max-width: 70%;
@@ -252,7 +278,7 @@ img{
 .planos .terceiroL::before {
     content: ''; /* Adiciona conteúdo vazio para o pseudo-elemento ::before */
     background-image: url('cadeado.png'); /* Substitua 'cadeado.png' pelo caminho da sua imagem */
-    background-size: contain; /* Alterado para 'contain' para garantir que a imagem caiba dentro do contêiner */
+    background-size: auto; /* Alterado para 'contain' para garantir que a imagem caiba dentro do contêiner */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     display: inline-block; /* Permite que o elemento tenha largura e altura */
     width: 50%; /* Ajuste a largura conforme necessário */
@@ -267,6 +293,9 @@ img{
 .sexta {
   display: flex;
   background-color: #333333;
+  background-image: url('Vector\ Circulo\ cortado.png'); 
+  background-size: auto; 
+  background-repeat: no-repeat;
 }
 .sexta img {
   border-radius: 100px;
@@ -297,9 +326,17 @@ font-size: 50px;
 }
 .sextaColunaDois {
   margin-left: auto; 
+  
+  margin-right: 10%;
 }
-footer {
+.sextaColunaDois h1, p {
+  text-align: right;
+  
+}
+
+footer p{
   text-align: center;
+  justify-content: center;
 }
 .final{
   background-color: #333333;
@@ -323,11 +360,6 @@ footer {
       margin-left: 0;
       margin-right: 0;
   }
-  .terceira{
-    display: block;
-    max-width: 100%;
-  }
-  
   .icone1 img {
       display: none;
   }
