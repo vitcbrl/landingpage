@@ -15,8 +15,8 @@ li {
   justify-content: center;
   text-align: center;
   margin: 1%;
-
 }
+
 
 .cabeca {
   background-color: #333;
@@ -31,36 +31,46 @@ li {
 .botaoInscricao {
   border-radius: 16px;
   background-color: red;
+  margin-left: 35%;
+  margin-top: 5%;
+  width: 30vh;
 }
-
-.primeira {
+.primeira{
   display: flex;
+  height: 100vh;
   background-image: url('Fundo\ cinza.png');
   background-size: cover; 
   background-position: center;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: -10px;
 }
-.primeiraC {
-  border: solid;
-  border-radius: 16px;
-  background-color: gray;
-  color: white;
-  width: 50%;
-  height: 50vh;
-  margin-left: 8%;
+.primeira img {
+  align-self: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.primeiraC{
+ width: 60%; 
+}
+.quadrado1{
+  height: 60%;
+  background-color: grey;
+  border-radius: 20px;
+  margin-left: 10%;
+  margin-top: 5%;
+  align-content: center;
+  
+}
+.quadrado1 h1 h2{
+  margin-top: 2%;
 }
 .segundaC{
-  margin-left: 40%;
-  margin-right: 5%;
+  margin-left: 30%;
+  margin-right: 2%;
   border: solid;
   background-color: white;
   border-radius: 40px;
-  width: 700px;
-  height: 55%;
+  width: 40%;
+  height: 70%;
   justify-content: center;
 }
 .icone1{
@@ -75,43 +85,36 @@ li {
   display: block;
 }
 
-.imgcheck{
-  list-style-type: none;
-    padding: 0;
-}
-.imgcheck li {
-  padding-left: -100px; /* Adiciona algum espaço à esquerda para acomodar a imagem */
-  position: relative; /* Permite posicionar a imagem dentro da li */
-  
-}
-.imgcheck li::before {
-  content: ''; /* Adiciona conteúdo vazio para o pseudo-elemento ::before */
-  background-image: url('check.png'); /* Substitua 'check.png' pelo caminho da sua imagem */
-  background-size: cover; /* Ajusta o tamanho da imagem */
-  display: inline-block; /* Permite que o elemento tenha largura e altura */
-  width: 16px; /* Define a largura da imagem */
-  height: 32px; /* Define a altura da imagem */
-  position: absolute; /* Permite posicionar a imagem em relação à li */
-  left: 0.9; /* Posiciona a imagem à esquerda da li */
-  top: 50%; /* Centraliza verticalmente a imagem */
-  transform: translateY(-50%); /* Ajusta a posição vertical da imagem para estar centrada */
-  
-  margin-right: -500px;
-  padding-right: 0%;
+.terceira {
+  position: relative;
+  background-color: #001F3F;
+  overflow: hidden;
 }
 
-.lista{
-  display: block;
-  color: white;
-  font-size: 40px;
-  
+.terceira::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px; /* Ajuste conforme necessário para aumentar a largura da borda à esquerda */
+  width: calc(100% + 40%); /* Ajuste conforme necessário para aumentar a largura total (esquerda + direita) */
+  height: 100%;
+  background-color: white;
+  z-index: -1;
 }
-.terceira{
-  text-align: center;
-  background-color: #001F3F;
-  color: white;
-  margin-top: -45px;
+
+/* Restante do seu código ... */
+
+
+
+
+.imgcheck {
+  max-width: 50%; /* Ajusta a largura máxima para 50% da largura da tela */
+  height: auto; /* Ajusta a altura automaticamente mantendo a proporção */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  display: block; /* Para centralizar corretamente, define como bloco */
 }
+
+
 /* ... (seu código existente) ... */
 .depoimentos {
   width: 80%; /* Ajuste a largura do carrossel conforme necessário */
@@ -164,9 +167,8 @@ li {
   background-image: url('Background\ Cinza\ atualizado.png');
     background-size: cover; /* Para cobrir todo o elemento */
     background-repeat: no-repeat;
-    height: 80vh;
-    margin-top: -20px;
-    padding-top: 0px;
+    height: 100vh;
+    margin-top: 33vh;
   }
 .quartaUm {
   border: solid;
@@ -202,14 +204,24 @@ img{
 }
 .quintaDois h1 span.etapa {
   color: red;
-  font-size: 80px; 
+  font-size: 80px;
+  display: block;
+  text-align: left;
+   
 }
 .quintaDois h1 span.planejar{
   font-size: 80px;
+  display: block;
+  text-align: left;
 }
 .quintaDois p span.pt {
   display: block;
   font-size: 20px;
+  text-align: left;
+}
+.quintaDois img {
+  max-width: fit-content;
+  justify-content: center;
 }
 .planos{
   display: flex;
