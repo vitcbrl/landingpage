@@ -176,6 +176,7 @@ li {
   color: white;
   text-align: center;
   border-radius: 16px;
+  font-size: 8vh;
 }
 .quarta{
     display: flex;
