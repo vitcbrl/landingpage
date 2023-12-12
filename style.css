@@ -56,7 +56,7 @@ li {
   margin-top: 10%;
 }
 .quadrado1{
-  height: 60%;
+  height: 70%;
   background-color: grey;
   border-radius: 20px;
   margin-left: 10%;
@@ -351,69 +351,140 @@ footer p{
   display: block;
   color: white;
 }
-@media only screen and (max-width: 700px) {
+/* Estilos comuns */
+
+/* Estilos comuns */
+
+@media only screen and (max-width: 768px) {
+  /* Estilos específicos para telas menores (por exemplo, tablets e smartphones) */
+
   .container{
     display: block;
+    width: auto !important;
   }
-  .primeira {
-    display: block;  
-    flex-direction: column;
+ 
+  .cabeca {
+    font-size: 24px;
+    
   }
 
-  .primeiraC,
+  .botaoInscricao {
+    
+    width: 60%;
+    text-align: center;
+  }
+  .primeira{
+    display: block;
+    
+    
+  }
+  .primeira img{
+    max-width: 100%;
+  }
+  .primeiraC {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+
   .segundaC {
-      width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-  }
-  .icone1 img {
-      display: none;
+    height: 100vh;
+    width: 50%;
   }
 
-  .quarta,
-  .quinta,
-  .sexta {
-      display: block;
-      max-width: 100%;
+  .icone1 img {
+    width: 80%;
+  }
+
+  .terceira {
+    display: block;
+    margin-top: 70vh;
+  }
+
+  .terceira h1 {
+    font-size: 24px;
+  }
+
+  .depoimentos {
+    height: 30vh;
+  }
+
+  .carrossel img {
+    width: 50%;
+  }
+
+  .botaoCarro {
+    font-size: 16px;
+  }
+  .imgcheck{
+    max-width: 100%;
+    height: fit-content;
+  }
+  .quarta {
+    display: block;
+    align-items: center;
   }
 
   .quartaUm {
-      margin-left: 0;
-      border-radius: 0;
-      height: 100%;
+    width: 80%;
+    margin-left: 5%;
+    height: fit-content;
   }
 
-  .quartaDois {
-      margin-left: 0;
-      max-width: 100%;
-      height: 100%;
+  .quartaDois  {
+    display: none;
+  }
+  .quinta {
+    display: block;
+    margin-top: 32vh;
+    max-width: 100%;
+    width: 100%;
+  }
+  .quintaDois h1 span.etapa,
+  .quintaDois h1 span.planejar,
+  .quintaDois p span.pt {
+    text-align: center;
+    margin-right: 5%;
+  }
+  .quintaDois h1 span.etapa{
+    font-size: larger;
   }
 
-  .quintaDois h1 {
-      font-size: 30px;
+  .quintaDois h1 span.planejar{
+    font-size: larger;
   }
-
-  .quintaDois p {
-      font-size: 14px;
+  .pila {
+    max-width: 100%;
   }
-
-  .planos {
-      flex-direction: column;
+  .planos{
+    display: block;
+    width: 100%;
   }
+  
 
-  .planos img {
-      margin: 20px 0;
+  .sexta {
+    background-size: contain;
   }
 
   .sexta img {
-      margin-left: 0;
+    margin-left: 10%;
   }
 
   .botaoF {
-      margin: 20px auto;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .botaoF button {
+    width: 80%;
+  }
+
+  .sextaColunaDois {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .final li {
-      font-size: 14px;
+    text-align: center;
   }
 }
