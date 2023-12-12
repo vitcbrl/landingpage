@@ -17,7 +17,6 @@ li {
   margin: 1%;
 }
 
-
 .cabeca {
   background-color: #333;
   color: white;
@@ -60,7 +59,7 @@ li {
   background-color: grey;
   border-radius: 20px;
   margin-left: 10%;
-  margin-top: 5%;
+  margin-top: 2%;
   align-content: center;
   
 }
@@ -81,6 +80,7 @@ li {
 }
 .icone1{
   display: flex;
+  margin-top: 4%;
 }
 .icone1 img {
   width: min-content;
@@ -101,6 +101,7 @@ li {
 .terceira h1{
   color: white;
   text-align: center;
+  font-size: 4vh;
 }
 
 .terceira::before {
@@ -124,7 +125,7 @@ li {
   height: auto; /* Ajusta a altura automaticamente mantendo a proporção */
   margin: 0 auto; /* Centraliza horizontalmente */
   display: block; /* Para centralizar corretamente, define como bloco */
-  height: 80vh;
+  height: fit-content;
 }
 
 
@@ -176,7 +177,7 @@ li {
   color: white;
   text-align: center;
   border-radius: 16px;
-  font-size: 8vh;
+  font-size: 10vh;
 }
 .quarta{
     display: flex;
@@ -398,32 +399,25 @@ footer p{
     display: block;
     
   }
-
   .terceira h1 {
     font-size: 24px;
   }
-
- 
   .depoimentos {
     text-align: center; /* Centralizar o conteúdo */
   }
-
   .carrossel {
     max-height: none;
     overflow: visible;
     position: relative; /* Adicionando posição relativa para o dimensionamento relativo ao contêiner pai */
   }
-
   .carrossel img {
     width: 100%;
     height: auto;
     display: none;
   }
-
   .carrossel img:first-child {
     display: block;
   }
-
   .botaoCarro {
     display: inline-block; /* Exibindo os botões novamente */
     position: absolute; /* Posicionando os botões sobre o carrossel */
@@ -443,10 +437,7 @@ footer p{
   .botaoCarro.direita {
     right: 0;
   }
-}
- 
 
-  
   .imgcheck{
     max-width: 100%;
     height: fit-content;
