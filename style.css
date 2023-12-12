@@ -403,17 +403,50 @@ footer p{
     font-size: 24px;
   }
 
+ 
   .depoimentos {
-    height: 30vh;
+    text-align: center; /* Centralizar o conteúdo */
+  }
+
+  .carrossel {
+    max-height: none;
+    overflow: visible;
+    position: relative; /* Adicionando posição relativa para o dimensionamento relativo ao contêiner pai */
   }
 
   .carrossel img {
-    width: 50%;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  .carrossel img:first-child {
+    display: block;
   }
 
   .botaoCarro {
-    font-size: 16px;
+    display: inline-block; /* Exibindo os botões novamente */
+    position: absolute; /* Posicionando os botões sobre o carrossel */
+    top: 50%; /* Ajustando a posição verticalmente no meio do carrossel */
+    transform: translateY(-50%); /* Centralizando verticalmente */
+    background-color: transparent; /* Removendo o fundo do botão para que o carrossel seja clicável */
+    border: none;
+    font-size: 1.5em;
+    color: black;
+    cursor: pointer;
   }
+
+  .botaoCarro.esquerda {
+    left: 0;
+  }
+
+  .botaoCarro.direita {
+    right: 0;
+  }
+}
+ 
+
+  
   .imgcheck{
     max-width: 100%;
     height: fit-content;
