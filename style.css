@@ -112,22 +112,24 @@ li {
   color: white;
   margin-top: -45px;
 }
+/* ... (seu código existente) ... */
 .depoimentos {
-  width: 50%;
+  width: 80%; /* Ajuste a largura do carrossel conforme necessário */
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  height: 80%;
+  height: 40vh; /* Ajuste a altura do carrossel conforme necessário */
 }
 
 .carrossel {
   display: flex;
   transition: transform 0.5s ease;
+  gap: 10px; /* Espaçamento entre as imagens */
 }
 
 .carrossel img {
-  width: 100%;
-  height: 40%;
+  width: 25%; /* Defina a largura desejada para cada imagem (25% para quatro imagens lado a lado) */
+  height: auto; /* Mantenha a proporção da imagem */
 }
 
 .botaoCarro {
@@ -138,13 +140,21 @@ li {
   border: none;
   font-size: 20px;
   cursor: pointer;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo transparente para tornar discreto */
+  padding: 10px;
+  border-radius: 5px;
 }
-.botaoCarro:first-child {
+
+.botaoCarro.esquerda {
   left: 0;
 }
-.botaoCarro:last-child {
+
+.botaoCarro.direita {
   right: 0;
 }
+/* ... (seu código existente) ... */
+
 .texto{
   background-color: red;
   color: white;
