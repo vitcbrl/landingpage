@@ -51,7 +51,8 @@ li {
   width: 100%;
 }
 .primeiraC{
- width: 60%; 
+  width: 60%; 
+  margin-top: 10%;
 }
 .quadrado1{
   height: 60%;
@@ -68,6 +69,7 @@ li {
 .segundaC{
   margin-left: 30%;
   margin-right: 2%;
+  margin-top: 10%;
   border: solid;
   background-color: white;
   border-radius: 40px;
@@ -203,9 +205,10 @@ li {
   text-align: left;
 }
 .quartaDois img {
-  max-width: 100%;
+  max-width: 75%;
   
-  height: 60%;
+  height: 50%;
+  margin-left: 5%;
   margin-top: 10%;
 }
 img{
