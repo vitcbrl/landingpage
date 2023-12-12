@@ -176,7 +176,7 @@ li {
 .quarta{
     display: flex;
     background-image: url('Linhas\ de\ detalhes.png');
-    background-size: contain; 
+    background-size: cover;
     background-repeat: no-repeat;
     background-color:black;
     height: 100vh;
@@ -278,7 +278,7 @@ img{
 .planos .terceiroL::before {
     content: ''; /* Adiciona conteúdo vazio para o pseudo-elemento ::before */
     background-image: url('cadeado.png'); /* Substitua 'cadeado.png' pelo caminho da sua imagem */
-    background-size: auto; /* Alterado para 'contain' para garantir que a imagem caiba dentro do contêiner */
+    background-size: contain; /* Alterado para 'contain' para garantir que a imagem caiba dentro do contêiner */
     background-repeat: no-repeat; /* Evita a repetição da imagem */
     display: inline-block; /* Permite que o elemento tenha largura e altura */
     width: 50%; /* Ajuste a largura conforme necessário */
