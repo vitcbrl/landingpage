@@ -1,0 +1,359 @@
+body {
+  background-color: white;
+  margin: 0%;
+  padding: 0%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+li {
+  display: inline;
+  justify-content: center;
+  text-align: center;
+  margin: 1%;
+
+}
+
+.cabeca {
+  background-color: #333;
+  color: white;
+  margin-top: -30px;
+  margin-bottom: -30px;
+  font-size: 30px;
+}
+.cabeca a {
+  color: white;
+}
+.botaoInscricao {
+  border-radius: 16px;
+  background-color: red;
+}
+
+.primeira {
+  display: flex;
+  background-image: url('Fundo\ cinza.png');
+  background-size: cover; 
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -10px;
+}
+.primeiraC {
+  border: solid;
+  border-radius: 16px;
+  background-color: gray;
+  color: white;
+  width: 50%;
+  height: 50vh;
+  margin-left: 8%;
+}
+.segundaC{
+  margin-left: 40%;
+  margin-right: 5%;
+  border: solid;
+  background-color: white;
+  border-radius: 40px;
+  width: 700px;
+  height: 55%;
+  justify-content: center;
+}
+.icone1{
+  display: flex;
+}
+.icone1 img {
+  width: min-content;
+  height: 5vh;
+  margin-bottom: 0%;
+}
+.textos{
+  display: block;
+}
+
+.imgcheck{
+  list-style-type: none;
+    padding: 0;
+}
+.imgcheck li {
+  padding-left: -100px; /* Adiciona algum espaço à esquerda para acomodar a imagem */
+  position: relative; /* Permite posicionar a imagem dentro da li */
+  
+}
+.imgcheck li::before {
+  content: ''; /* Adiciona conteúdo vazio para o pseudo-elemento ::before */
+  background-image: url('check.png'); /* Substitua 'check.png' pelo caminho da sua imagem */
+  background-size: cover; /* Ajusta o tamanho da imagem */
+  display: inline-block; /* Permite que o elemento tenha largura e altura */
+  width: 16px; /* Define a largura da imagem */
+  height: 32px; /* Define a altura da imagem */
+  position: absolute; /* Permite posicionar a imagem em relação à li */
+  left: 0.9; /* Posiciona a imagem à esquerda da li */
+  top: 50%; /* Centraliza verticalmente a imagem */
+  transform: translateY(-50%); /* Ajusta a posição vertical da imagem para estar centrada */
+  
+  margin-right: -500px;
+  padding-right: 0%;
+}
+
+.lista{
+  display: block;
+  color: white;
+  font-size: 40px;
+  
+}
+.terceira{
+  text-align: center;
+  background-color: #001F3F;
+  color: white;
+  margin-top: -45px;
+}
+.depoimentos {
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  height: 80%;
+}
+
+.carrossel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carrossel img {
+  width: 100%;
+  height: 40%;
+}
+
+.botaoCarro {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.botaoCarro:first-child {
+  left: 0;
+}
+.botaoCarro:last-child {
+  right: 0;
+}
+.texto{
+  background-color: red;
+  color: white;
+}
+.quarta{
+  display: flex;
+  background-image: url('Background\ Cinza\ atualizado.png');
+    background-size: cover; /* Para cobrir todo o elemento */
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin-top: -20px;
+    padding-top: 0px;
+  }
+.quartaUm {
+  border: solid;
+  background-color: white;
+  width: 40%;
+  height: 70vh;
+  margin-right: -20px;
+  margin-top: 30px;
+  border-radius: 20px;
+  margin-left: 20vh;
+}
+
+.quartaUm p {
+  margin-top: 8%;
+  font-size:35px;
+}
+.quartaDois img {
+  max-width: 70%;
+  margin-left: 100px;
+  height: 70%;
+  margin-top: 2%;
+}
+img{
+  width: 100%;
+}
+
+.quinta{
+  display: flex;
+  max-width: 100%;
+}
+.quintaDois{
+  margin-left: auto;
+}
+.quintaDois h1 span.etapa {
+  color: red;
+  font-size: 80px; 
+}
+.quintaDois h1 span.planejar{
+  font-size: 80px;
+}
+.quintaDois p span.pt {
+  display: block;
+  font-size: 20px;
+}
+.planos{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  align-items: stretch;
+  height: 100%;
+  width: 100%;
+}
+.planos img {
+  max-width: 70%;
+  margin: 8vh;
+}
+
+.planos .segundoL {
+    /* Suas regras para segundo lote */
+    position: relative;
+}
+
+.planos .terceiroL {
+    /* Suas regras para terceiro lote */
+    position: relative;
+}
+
+/* Adições para as imagens de cadeado */
+.planos .segundoL::before,
+.planos .terceiroL::before {
+    content: ''; /* Adiciona conteúdo vazio para o pseudo-elemento ::before */
+    background-image: url('cadeado.png'); /* Substitua 'cadeado.png' pelo caminho da sua imagem */
+    background-size: contain; /* Alterado para 'contain' para garantir que a imagem caiba dentro do contêiner */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    display: inline-block; /* Permite que o elemento tenha largura e altura */
+    width: 50%; /* Ajuste a largura conforme necessário */
+    height: 50%; /* Ajuste a altura conforme necessário */
+    position: absolute; /* Permite posicionar a imagem em relação ao contêiner pai */
+    top: 25%; /* Ajuste a posição vertical conforme necessário para centralizar */
+    left: 25%; /* Ajuste a posição horizontal conforme necessário para centralizar */
+    z-index: 1; /* Garante que a imagem fique sobreposta às outras */
+}
+
+
+.sexta {
+  display: flex;
+  background-color: #333333;
+}
+.sexta img {
+  border-radius: 100px;
+  margin-left: 40%;
+  
+}
+.botaoF{
+background-color: white;
+text-align: center;
+justify-content: center;
+color: white;
+border-radius: 16px;
+margin-left: 32%;
+margin-right: 30%;
+margin-top: 2vw;
+height: 10vh;
+font-size: 50px;
+}
+.botaoF button{
+  color: white;
+  background-color: red;
+  font: 40px;
+  height: 50px;
+  width: 60%;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+}
+.sextaColunaDois {
+  margin-left: auto; 
+}
+footer {
+  text-align: center;
+}
+.final{
+  background-color: #333333;
+}
+.final li{
+  display: block;
+  color: white;
+}
+@media only screen and (max-width: 700px) {
+  .container{
+    display: block;
+  }
+  .primeira {
+    display: block;  
+    flex-direction: column;
+  }
+
+  .primeiraC,
+  .segundaC {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+  }
+  .terceira{
+    display: block;
+    max-width: 100%;
+  }
+  
+  .icone1 img {
+      display: none;
+  }
+
+  .quarta,
+  .quinta,
+  .sexta {
+      display: block;
+      max-width: 100%;
+  }
+
+  .quartaUm {
+      margin-left: 0;
+      border-radius: 0;
+      height: 100%;
+  }
+
+  .quartaDois {
+      margin-left: 0;
+      max-width: 100%;
+      height: 100%;
+  }
+
+  .quintaDois h1 {
+      font-size: 30px;
+  }
+
+  .quintaDois p {
+      font-size: 14px;
+  }
+
+  .planos {
+      flex-direction: column;
+  }
+
+  .planos img {
+      margin: 20px 0;
+  }
+
+  .sexta img {
+      margin-left: 0;
+  }
+
+  .botaoF {
+      margin: 20px auto;
+  }
+
+  .final li {
+      font-size: 14px;
+  }
+}
